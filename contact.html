@@ -4,75 +4,30 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Contact — Maytech</title>
-  <meta name="description" content="Contact Maytech for quotes, orders, and support.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header container">
-    <div class="brand"><div class="logo">M</div><div><div style="font-size:0.95rem">Maytech</div><small style="color:var(--muted)">Contact</small></div></div>
-    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></nav>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1>Contact Us</h1>
-    <p style="color:var(--muted)">Questions? Quotes? Use the form below — the button will open your email client with prefilled order details (no backend required).</p>
+  <section>
+    <h2>We’d love to hear from you!</h2>
+    <p>Email: <a href="mailto:sales@maytech.example">sales@maytech.example</a></p>
+    <p>Phone: 0917-XXX-XXXX</p>
+    <p>Location: Metro Manila, Philippines</p>
+  </section>
 
-    <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px">
-      <section class="card">
-        <!-- Contact form that opens user's mail client -->
-        <form id="contactForm">
-          <label for="name">Your name</label><br/>
-          <input id="name" name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:8px"/>
+  <footer>
+    <p>© <span id="year"></span> Maytech. All rights reserved.</p>
+  </footer>
 
-          <label for="email" style="margin-top:12px;display:block">Email</label>
-          <input id="email" type="email" name="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:8px"/>
-
-          <label for="phone" style="margin-top:12px;display:block">Phone</label>
-          <input id="phone" name="phone" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:8px"/>
-
-          <label for="message" style="margin-top:12px;display:block">Message / Order details</label>
-          <textarea id="message" name="message" rows="6" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:8px"></textarea>
-
-          <div style="margin-top:12px;display:flex;gap:8px">
-            <button type="submit" class="btn btn-primary">Send via Email</button>
-            <button type="reset" class="btn btn-ghost">Clear</button>
-          </div>
-        </form>
-        <p style="color:var(--muted);margin-top:10px">Or email us directly at <a href="mailto:sales@maytech.example">sales@maytech.example</a></p>
-      </section>
-
-      <aside class="card">
-        <h3>Visit or call</h3>
-        <div style="color:var(--muted);margin-top:8px">
-          <div><strong>Phone:</strong> 0917-XXX-XXXX</div>
-          <div style="margin-top:8px"><strong>Location:</strong> Metro Manila, Philippines</div>
-          <div style="margin-top:8px"><strong>Hours:</strong> Mon–Fri 9:00–18:00</div>
-        </div>
-      </aside>
-    </div>
-
-    <footer class="site-footer" style="margin-top:20px">
-      <div class="footer-grid">
-        <div><strong>Maytech</strong><div style="color:var(--muted)">Fun & reliable tech for events and home.</div></div>
-        <div style="color:var(--muted)">© <span id="year4"></span> Maytech</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    // Mailto-based form: opens the user's email client with prefilled message.
-    const SALES_EMAIL = "sales@maytech.example";
-    document.getElementById('year4').textContent = new Date().getFullYear();
-    document.getElementById('contactForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value || '';
-      const email = document.getElementById('email').value || '';
-      const phone = document.getElementById('phone').value || '';
-      const msg = document.getElementById('message').value || '';
-      const subject = encodeURIComponent('Maytech inquiry from ' + name);
-      const body = encodeURIComponent('Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0APhone: ' + phone + '%0D%0A%0D%0A' + msg);
-      window.location.href = 'mailto:' + SALES_EMAIL + '?subject=' + subject + '&body=' + body;
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

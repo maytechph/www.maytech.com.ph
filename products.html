@@ -4,39 +4,45 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Products — Maytech</title>
-  <meta name="description" content="Browse Maytech's latest gadgets: photobooths, smart TVs, massagers, air fryers, speakers and more.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header container">
-    <div class="brand"><div class="logo">M</div><div><div style="font-size:0.95rem">Maytech</div><small style="color:var(--muted)">Products</small></div></div>
-    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></nav>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1>Products</h1>
-    <p style="color:var(--muted)">Browse our latest gadgets and appliances. Click a product to inquire or place an order.</p>
+  <section>
+    <h2>Top Sellers</h2>
 
-    <section id="products-grid" class="products-grid" aria-live="polite">
-      <!-- populated by script.js -->
-    </section>
+    <div class="product-card">
+      <img src="assets/photobooth.jpg" alt="Digital Mirror Photobooth">
+      <h3>Digital Mirror Photobooth</h3>
+      <p>Perfect for parties and corporate events.</p>
+    </div>
 
-    <section style="margin-top:20px">
-      <h2 id="catalog">Want a custom bundle?</h2>
-      <p style="color:var(--muted)">We create event bundles (photobooth + speaker + lighting). Email <a href="mailto:sales@maytech.example">sales@maytech.example</a> for a quote.</p>
-    </section>
+    <div class="product-card">
+      <img src="assets/smarttv.jpg" alt="Portable Smart TV">
+      <h3>Portable Smart TV</h3>
+      <p>Entertainment anytime, anywhere.</p>
+    </div>
 
-    <footer class="site-footer">
-      <div class="footer-grid">
-        <div><strong>Maytech</strong><div style="color:var(--muted)">Fun & reliable tech for events and home.</div></div>
-        <div style="color:var(--muted)">© <span id="year2"></span> Maytech</div>
-      </div>
-    </footer>
-  </main>
+    <div class="product-card">
+      <img src="assets/massager.jpg" alt="Handheld Massager">
+      <h3>Handheld Massager</h3>
+      <p>Relaxation made simple and smart.</p>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById('year2').textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    <p>© <span id="year"></span> Maytech. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

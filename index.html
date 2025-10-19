@@ -3,21 +3,15 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Maytech — Modern Consumer Electronics</title>
-  <meta name="description" content="Maytech supplies the latest consumer electronics designed to power your digital lifestyle — photobooths, massagers, home appliances, portable smart TVs and more.">
+  <title>Maytech — Power Your Digital Lifestyle</title>
+  <meta name="description" content="Supplying the latest consumer electronics designed to power your digital lifestyle — photobooths, massagers, home appliances, smart TVs and more.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header container">
-    <div class="brand">
-      <div class="logo">M</div>
-      <div>
-        <div style="font-size:0.95rem">Maytech</div>
-        <small style="color:var(--muted);font-weight:600">Power your digital lifestyle</small>
-      </div>
-    </div>
-
-    <nav class="nav" aria-label="Main Navigation">
+  <header>
+    <h1>Maytech</h1>
+    <p>Power your digital lifestyle ⚡</p>
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
@@ -25,116 +19,27 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>Fun tech that fits your life — <span style="color:var(--accent)">playful</span>, <span style="color:var(--accent-2)">smart</span>, and ready to wow.</h1>
-        <p class="lead">Supplying the latest consumer electronics and tech designed to power your digital lifestyle — photobooth, massager, home appliances, portable smart TV and more.</p>
+  <section class="hero">
+    <h2>Fun Tech That Fits Your Life</h2>
+    <p>Playful, smart, and ready to wow — from photobooths to home gadgets and beyond.</p>
+    <div style="margin-top:20px;">
+      <a href="products.html" class="btn">See Products</a>
+      <a href="contact.html" class="btn btn-ghost">Get a Quote</a>
+    </div>
+  </section>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="products.html">See Products</a>
-          <a class="btn btn-ghost" href="contact.html">Get a Quote</a>
-        </div>
+  <section>
+    <h2>Why Choose Maytech?</h2>
+    <div class="features">
+      <p>✨ <strong>Curated Fun:</strong> Products that start conversations — from photobooths to party speakers.</p>
+      <p>⚡ <strong>Reliable Power:</strong> Tested appliances and tech you can trust at events and home.</p>
+      <p>📦 <strong>Easy Ordering:</strong> Quick quotes, setup support, and local delivery options.</p>
+    </div>
+  </section>
 
-        <div class="features" aria-hidden="false">
-          <div class="feature">
-            <div class="icon">✨</div>
-            <div>
-              <strong>Curated fun</strong>
-              <div class="muted" style="color:var(--muted);margin-top:6px">Products that start conversations — from photobooths to party speakers.</div>
-            </div>
-          </div>
-
-          <div class="feature">
-            <div class="icon">⚡</div>
-            <div>
-              <strong>Reliable power</strong>
-              <div class="muted" style="color:var(--muted);margin-top:6px">Well-tested appliances and tech you can trust at events and home.</div>
-            </div>
-          </div>
-
-          <div class="feature">
-            <div class="icon">📦</div>
-            <div>
-              <strong>Easy ordering</strong>
-              <div class="muted" style="color:var(--muted);margin-top:6px">Quick quotes, support with setup, and local delivery options.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <aside>
-        <div class="card">
-          <img src="/assets/photobooth-hero.jpg" alt="Photobooth" style="height:320px;object-fit:cover;border-radius:8px"/>
-          <div>
-            <h3>Featured product</h3>
-            <p style="color:var(--muted);margin-top:6px">Digital Mirror Photobooth — perfect for parties & corporate events.</p>
-            <div style="margin-top:12px;display:flex;gap:8px">
-              <a class="btn btn-primary" href="products.html">View details</a>
-              <a class="btn btn-ghost" href="mailto:sales@maytech.example?subject=Photobooth Inquiry">Ask a question</a>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section style="margin-top:26px">
-      <h2 style="margin:0 0 12px 0">Popular picks</h2>
-      <div id="products-sample" class="products-grid">
-        <!-- small sample cards - will be populated by JS if on same page -->
-      </div>
-    </section>
-
-    <section style="margin-top:28px;display:grid;grid-template-columns:1fr 300px;gap:18px">
-      <div class="testimonial">
-        <strong>What our customers say</strong>
-        <p style="margin-top:8px;color:var(--muted)">“Maytech's photobooth made our company party unforgettable — super easy setup and people loved it.” — Event Manager</p>
-      </div>
-
-      <aside class="card">
-        <h4>Need help choosing?</h4>
-        <p style="color:var(--muted)">Email <a href="mailto:sales@maytech.example">sales@maytech.example</a> or call <strong>0917-XXX-XXXX</strong>. We help pick gear for every budget.</p>
-      </aside>
-    </section>
-
-    <footer class="site-footer">
-      <div class="footer-grid container">
-        <div>
-          <strong>Maytech</strong>
-          <div style="color:var(--muted)">Supplying playful tech for your home and events.</div>
-        </div>
-        <div style="color:var(--muted)">© <span id="year"></span> Maytech. All rights reserved.</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // small inline product sample if script.js not loaded
-    const productsSample = [
-      {name:"Digital Mirror Photobooth", price:"₱89,900", img:"/assets/photobooth.jpg"},
-      {name:"Portable Smart TV", price:"₱12,900", img:"/assets/smarttv.jpg"},
-      {name:"Handheld Massager", price:"₱3,499", img:"/assets/massager.jpg"}
-    ];
-    const sampleGrid = document.getElementById('products-sample');
-    if(sampleGrid){
-      sampleGrid.innerHTML = productsSample.map(p => `
-        <article class="card">
-          <img src="${p.img}" alt="${p.name}" onerror="this.src='/assets/placeholder.jpg'"/>
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div>
-              <h3 style="margin:6px 0 0 0">${p.name}</h3>
-              <div style="color:var(--muted)">${p.price}</div>
-            </div>
-            <div style="display:flex;flex-direction:column;gap:8px">
-              <a class="btn btn-ghost" href="products.html">View</a>
-              <a class="btn btn-primary" href="mailto:sales@maytech.example?subject=${encodeURIComponent(p.name)}">Order</a>
-            </div>
-          </div>
-        </article>
-      `).join('');
-    }
-  </script>
+  <footer>
+    <p>© <span id="year"></span> Maytech. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

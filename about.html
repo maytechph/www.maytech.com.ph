@@ -4,48 +4,33 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>About — Maytech</title>
-  <meta name="description" content="About Maytech — playful, reliable consumer electronics for events and home.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header container">
-    <div class="brand"><div class="logo">M</div><div><div style="font-size:0.95rem">Maytech</div><small style="color:var(--muted)">About</small></div></div>
-    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></nav>
+  <header>
+    <h1>About Maytech</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1>About Maytech</h1>
-    <p class="lead">Supplying the latest consumer electronics and technology products designed to power our digital lifestyle — photobooth, massager, home appliances, portable smart TV, and more.</p>
+  <section>
+    <h2>Who We Are</h2>
+    <p>Maytech supplies the latest consumer electronics and technology products designed to power your digital lifestyle. From photobooths to smart appliances, we deliver innovative tools that bring fun and convenience to everyday life.</p>
+  </section>
 
-    <section style="margin-top:18px;display:grid;gap:12px">
-      <div class="card">
-        <h3>Our mission</h3>
-        <p style="color:var(--muted)">To bring playful, reliable, and easy-to-use tech to homes and events — making every celebration or everyday moment a little more fun.</p>
-      </div>
+  <section>
+    <h2>Our Mission</h2>
+    <p>To make modern technology accessible, enjoyable, and practical for every home and event in the Philippines and beyond.</p>
+  </section>
 
-      <div class="card">
-        <h3>What we offer</h3>
-        <ul style="color:var(--muted);margin:8px 0 0 18px">
-          <li>Event-ready gear (photobooths, speakers)</li>
-          <li>Home electronics (smart TVs, appliances)</li>
-          <li>Accessories and bundles for parties</li>
-        </ul>
-      </div>
+  <footer>
+    <p>© <span id="year"></span> Maytech. All rights reserved.</p>
+  </footer>
 
-      <div class="card">
-        <h3>Local support</h3>
-        <p style="color:var(--muted)">We provide local delivery, setup help, and warranty support for select items.</p>
-      </div>
-    </section>
-
-    <footer class="site-footer" style="margin-top:20px">
-      <div class="footer-grid">
-        <div><strong>Maytech</strong><div style="color:var(--muted)">Bringing joy through tech.</div></div>
-        <div style="color:var(--muted)">© <span id="year3"></span> Maytech</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
